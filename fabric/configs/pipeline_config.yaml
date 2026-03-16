@@ -1,0 +1,7 @@
+api:
+  source_url: https://jsonplaceholder.typicode.com/posts
+
+lakehouse:
+  bronze_path: Files/API_data/bronze/posts
+  silver_table: Tables/silver_posts
+  gold_table: Tables/gold_user_post_summary
