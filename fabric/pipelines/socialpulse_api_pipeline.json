@@ -1,0 +1,31 @@
+{
+  "name": "socialpulse_api_pipeline",
+  "properties": {
+    "activities": [
+      {
+        "name": "Extract_from_API",
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "JsonSource"
+          },
+          "sink": {
+            "type": "JsonSink"
+          }
+        }
+      },
+      {
+        "name": "Data_Quality_Check",
+        "type": "TridentNotebook"
+      },
+      {
+        "name": "Bronze_to_Silver",
+        "type": "TridentNotebook"
+      },
+      {
+        "name": "Silver_to_Gold",
+        "type": "TridentNotebook"
+      }
+    ]
+  }
+}
