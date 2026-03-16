@@ -1,0 +1,28 @@
+REST API Source
+      │
+      ▼
+Microsoft Fabric Data Pipeline
+(Copy Activity)
+      │
+      ▼
+Bronze Layer (Raw JSON Files)
+Lakehouse Storage
+      │
+      ▼
+Data Quality Validation
+(Great Expectations Notebook)
+      │
+      ▼
+Silver Layer
+Clean Structured Tables
+      │
+      ▼
+PySpark Transformation
+(Fabric Notebook)
+      │
+      ▼
+Gold Layer
+Aggregated Analytics Tables
+      │
+      ▼
+Power BI Dashboard / Analytics
